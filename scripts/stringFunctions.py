@@ -26,3 +26,10 @@ print(' '.join(['Hello','World'])) list to str #convert list to string
  print(str.index('e')) # Return index , value Error if not found
  print(str.startswith('H')) #Return True if start with else False
  print(str.endswith('e')) # Return True if ends with ekse False
+
+#Alignment
+str='12'
+
+print(str.ljust(6,'*')) #align left
+print(str.rjust(6,"*")) #align right
+print(str.center(6,'*')) # align center
