@@ -96,3 +96,22 @@ for  i in lst:
 print(f'{duplicate} are the duplicates in the given List')
 
 
+#================================================================================
+#======WAP to find no.of occurrence of a given number in a list==================
+#================================================================================
+
+lst = [1, 2, 33, 49, 5, 33, 5, 5, 5]
+num = int(input('Enter the number:\n'))
+
+def count_lst(lst, num):
+    count = 0
+    for i in lst:
+        if i == num:
+            count += 1
+    return count       
+
+res = count_lst(lst, num)
+print(f'Occurrence of Number {num} in a list is {res}')
+
+
+
