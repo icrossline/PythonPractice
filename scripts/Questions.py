@@ -70,7 +70,7 @@ print(f'{largest} is the largest.\n{secondLargest} is the second largest element
 
 lst=[1,3,4,8,5,4]
 
-for n in range(len(lst)):
+for n in range(len(lst)-1):
     if lst[n]<lst[n+1]:
         continue
     else:
