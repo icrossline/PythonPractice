@@ -64,4 +64,20 @@ print(f'{largest} is the largest.\n{secondLargest} is the second largest element
                                                                                                    #6 is the second largest element in a given List
 
 
+#================================================================================
+#======WAP to find list is sorted or not ===========
+#================================================================================
+
+lst=[1,3,4,8,5,4]
+
+for n in range(len(lst)):
+    if lst[n]<lst[n+1]:
+        continue
+    else:
+        print('Your list is not sorted')
+        break
+else:
+    print('Your list is sorted')
+
+
 
