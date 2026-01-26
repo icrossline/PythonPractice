@@ -79,5 +79,19 @@ for n in range(len(lst)-1):
 else:
     print('Your list is sorted')
 
+#================================================================================
+#======WAP to find duplicate element in a list ===========
+#================================================================================
+
+lst=[1,2,2,3,3,5,4,5]
+newList=[]
+duplicate=[]
+for  i in lst:
+    if i in newList:
+        duplicate.append(i)
+    else:
+        newList.append(i)
+
+print(f'{duplicate} are the duplicates in the given List')
 
 
