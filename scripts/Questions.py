@@ -31,7 +31,7 @@ palindromelist(['mom','red','racecar'])
 print(res) #return mom and racecar
 
 #================================================================================
-#=================WAP to find largest number in a given list=====================
+#=================WAP to find largest number in a given list with a index=====================
 #================================================================================
 
 num=[1,5,2,8,6,9,3]
@@ -39,7 +39,7 @@ largest=num[0]
 index=0
 
 for n in  range(len(num)):
-    if largest<num[n]:
+    if largest < num[n]:
         largest=num[n]
         index=n
         
@@ -51,19 +51,20 @@ print(f"The greatest number in given list is {largest} present at index no.{inde
 #======WAP to find a second largest and second element in a given list===========
 #================================================================================
 
-num=[1,5,2,6,9,3]
-largest=num[0]
-secondLargest=num[1]
+lst=[10,221,11,8,4]
 
-for n in num:
-    if largest<n:
-        secondLargest = largest
-        largest= n
-    
-print(f'{largest} is the largest.\n{secondLargest} is the second largest element in a given List') #9 is the largest.
-                                                                                                   #6 is the second largest element in a given List
+def sorted_lst(lst):
+    largest=lst[0]
+    second=lst[0]
+    for curr  in lst:
+        if curr > largest:
+            second =largest
+            largest=curr
+        elif curr < largest and curr > second:
+            second=curr
+    return second
 
-
+print(sorted_lst(lst))    
 #================================================================================
 #======WAP to find list is sorted or not ===========
 #================================================================================
