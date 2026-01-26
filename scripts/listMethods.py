@@ -8,10 +8,11 @@ numList.remove(5) # remove a particular or given element
 numList.clear() # remove all elements from a list
 
 
-# Reverse And Sorting
+# Reverse , sorting and count
 
 numList.reverse() # Reverse the list
 numList.sort() # sort the list A-Z or 0-9
+numList.count(5) # count number of occurrence
 
 # Copy or Extend list
 newnumList= numList.copy() # Copy the list
