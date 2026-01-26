@@ -1,4 +1,7 @@
-# WA Function to check string is palindrome or not ?
+
+#================================================================================
+#============= WA Function to check string is palindrome or not ?================
+#================================================================================
 def palindrome(a):
     if a.lower() == a.lower()[::-1]:
         return 'Palindome'
@@ -10,8 +13,9 @@ print(palindrome('red')) #not a palindrome
 
  
 
-
-#WA function to check  palindrome in a list ?
+#================================================================================
+#=================WA function to check  palindrome in a list ?===================
+#================================================================================
 
 def palindromelist(a):
     for ch in a:
@@ -26,8 +30,9 @@ res=[] #Empty list
 palindromelist(['mom','red','racecar']) 
 print(res) #return mom and racecar
 
-
-#WAP to find largest number in a given list
+#================================================================================
+#=================WAP to find largest number in a given list=====================
+#================================================================================
 
 num=[1,5,2,8,6,9,3]
 largest=num[0]
@@ -40,6 +45,23 @@ for n in  range(len(num)):
         
         
 print(f"The greatest number in given list is {largest} present at index no.{index}")  #The greatest number in given list is 9 present at index no.5  
+
+
+#================================================================================
+#======WAP to find a second largest and second element in a given list===========
+#================================================================================
+
+num=[1,5,2,6,9,3]
+largest=num[0]
+secondLargest=num[1]
+
+for n in num:
+    if largest<n:
+        secondLargest = largest
+        largest= n
+    
+print(f'{largest} is the largest.\n{secondLargest} is the second largest element in a given List') #9 is the largest.
+                                                                                                   #6 is the second largest element in a given List
 
 
 
