@@ -114,4 +114,23 @@ res = count_lst(lst, num)
 print(f'Occurrence of Number {num} in a list is {res}')
 
 
+#========================================================================
+#========WAP to find a frequency of each element in a list===============
+#========================================================================
+
+lst=[1,2,2,3,3,3,4,4,4,4]
+frequency={}
+
+
+for i in lst:
+    if i not in frequency:
+        frequency[i]=1
+    else:
+        frequency[i]+=1
+        
+
+print(frequency)        
+
+
+
 
